@@ -53,8 +53,6 @@ class WikiScraper:
                     report[last_date] = count
 
         df = pd.DataFrame(report.items(), columns=['Date', 'Outcomes'])
-        # for index, row in df.iterrows():
-        #     print(row['Date'], row['Outcomes'])
         return df
 
     def write_to_csv(self, result):
